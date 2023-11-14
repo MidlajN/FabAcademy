@@ -1010,7 +1010,7 @@ Courses Style
   position: absolute;
   left: 30px;
   top: 30px;
-  font-size: 14px;
+  font-size: 10px;
   text-transform: uppercase;
   color: #7a6ad8;
   background-color: rgba(250, 250, 250, 0.95);
@@ -1081,6 +1081,84 @@ Courses Style
 .events_item:hover .thumb span.price {
   transform: scale(1.2);
 }
+
+.moreProject {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    background-color: #7a6ad8;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.alumnI {
+  margin-inline: 70px;
+  position: relative;
+  border-radius: 25px;
+  padding: 140px 30px 40px 30px;
+  background-color: #f1f0fe;
+  transition: all .3s;
+  text-align: center;
+  cursor: default;
+  margin-bottom: 30px;
+}
+
+.alumnI img {
+  max-width: 220px;
+  border-radius: 50%;
+  position: absolute;
+  top: -110px;
+  left: 50%;
+  transform: translateX(-110px);
+  transition: all .3s;
+}
+
+
+.alumnI ul li {
+  display: inline-block;
+  margin: 0px 2px;
+}
+
+.alumnI span {
+  color: #7a6ad8;
+}
+
+.alumnI ul li a {
+  background-color: #fff;
+  color: #7a6ad8;
+  display: inline-block;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all .3s;
+}
+
+.alumnI:hover {
+  background-color: #7b6ad867;
+  color: white;
+}
+.alumnI:hover h4 {
+  color: white;
+}
+.alumni:hover span {
+  color: white;
+}
+
+.alumnI ul li a:hover {
+  background-color: #7a6ad8;
+  color: white;
+}
+
+
+
+
+
+
+
+
 
 
 /* 

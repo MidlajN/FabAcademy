@@ -1094,7 +1094,7 @@ Courses Style
 }
 
 .alumnI {
-  margin-inline: 70px;
+  margin-inline: 40px;
   position: relative;
   border-radius: 25px;
   padding: 140px 30px 40px 30px;
@@ -1107,9 +1107,11 @@ Courses Style
 
 .alumnI img {
   max-width: 220px;
-  border-radius: 50%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 10%;
   position: absolute;
-  top: -110px;
+  top: -58px;
   left: 50%;
   transform: translateX(-110px);
   transition: all .3s;
@@ -1137,8 +1139,11 @@ Courses Style
 }
 
 .alumnI:hover {
-  background-color: #7b6ad867;
+  background-color: #7b6ad88e;
   color: white;
+}
+.alumnI:hover img {
+  top: -68px;
 }
 .alumnI:hover h4 {
   color: white;

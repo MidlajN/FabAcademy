@@ -672,7 +672,7 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
+  background-image: url(../images/banner-bg.webp);
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -680,15 +680,15 @@ Banner Style
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/fabbanner.jpeg);
+  background-image: url(../images/fabbanner.webp);
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/academybanner.jpg);
+  background-image: url(../images/academybanner.webp);
 }
 
 .main-banner .item-3 {
-  background-image: url(../images/zund.jpeg);
+  background-image: url(../images/zund.webp);
 }
 
 .main-banner .item {
@@ -1081,6 +1081,7 @@ Courses Style
 .events_item:hover .thumb span.price {
   transform: scale(1.2);
 }
+
 
 .moreProject {
     width: 40px;

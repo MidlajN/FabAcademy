@@ -34,26 +34,28 @@
 
 	const elem = document.querySelector('.event_box');
 	const filtersElem = document.querySelector('.event_filter');
+
 	if (elem) {
 		const rdn_events_list = new Isotope(elem, {
 			itemSelector: '.event_outer',
 			layoutMode: 'masonry'
 		});
+
 		if (filtersElem) {
-			filtersElem.addEventListener('click', function(event) {
-				if (!matchesSelector(event.target, 'a')) {
-					return;
-				}
-				const filterValue = event.target.getAttribute('data-filter');
-				rdn_events_list.arrange({
+			filtersElem.addEventListener('click', function (event) {
+				if (event.target.tagName === 'A') {
+					const filterValue = event.target.getAttribute('data-filter');
+					rdn_events_list.arrange({
 					filter: filterValue
-				});
-				filtersElem.querySelector('.is_active').classList.remove('is_active');
-				event.target.classList.add('is_active');
-				event.preventDefault();
+					});
+					filtersElem.querySelector('.is_active').classList.remove('is_active');
+					event.target.classList.add('is_active');
+					event.preventDefault();
+				}
 			});
 		}
 	}
+
 
 
 	$('.owl-banner').owlCarousel({

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://fabacademy.fablabkerala.in/sitemap.xml

@@ -901,6 +901,14 @@ About Style
   border-radius: 40px !important;
 }
 
+.faq .accordion-button {
+  outline: none;
+  box-shadow: none;
+  border-radius: 40px !important;
+  font-size: 12px;
+  padding-block: 8px;
+}
+
 .accordion-button:not(.collapsed) {
   color: #7a6ad8;
   background-color: #fff;
@@ -1542,14 +1550,14 @@ Contact Style
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0;
+  left: 0;
   z-index: -1;
   width: 65%;
   height: 100%;
   background-color: #f1f0fe;
   content: '';
-  border-top-left-radius: 500px;
-  border-bottom-left-radius: 500px;
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
 }
 
 
@@ -1619,7 +1627,17 @@ Contact Style
   color: #7a6ad8;
 }
 
-.contact-us .special-offer a {
+.applyDiv {
+  display: inline;
+  transition: 0.5s;
+}
+
+.applyDiv:hover {
+  text-shadow:1px 1px 3px #000;
+}
+
+
+.applyBtn {
   position: absolute;
   right: 30px;
   top: 35px;
@@ -1832,10 +1850,41 @@ footer::before {
   text-wrap: nowrap;
 }
 
+.faqtop {
+  display: none;
+}
+.scholarshipSpan {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.scholarshipSpan2 {
+  font-size: 12px;
+}
 
+.scholarshipSpan2 span {
+  font-weight: 700;
+  color: #8974ff;
+}
 
+.applyProcessDiv {
+  margin-top: 20px;
+}
+.applyProcessDiv span {
+  font-size: 14px;
+  line-height: 0px;
+  color: #4a4a4a;
+}
 
-
+.applyLink {
+  color: #7a6ad8;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.applyLink:hover {
+  text-shadow: 0 1px 1px #383068;
+  /* text-decoration: underline !important; */
+}
 
 
 
@@ -2063,6 +2112,12 @@ body {
   }
   footer {
     margin-top: 30px;
+  }
+  .faqtop {
+    display: block;
+  }
+  .faqdown {
+    display: none;
   }
 }
 

@@ -839,6 +839,7 @@ Services Style
   margin-bottom: 30px;
   margin-right: 80px;
   transition: all .4s;
+  min-height: 380px;
 }
 
 .services .service-item h4 {
@@ -1886,6 +1887,74 @@ footer::before {
   /* text-decoration: underline !important; */
 }
 
+.scholarshipList {
+  display: flex;
+  justify-content: center;
+}
+.scholarshipItem {
+  margin-right: 20px;
+}
+
+/* ------------------------- Scholarship Div ------------------------ */
+.scholarshipDiv {
+  display: flex;
+  padding: 30px;
+  margin-block: 60px;
+  background-color: #7a6ad8;
+  text-align: center;
+  border-radius: 25px;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s; 
+}
+.scholarshipDiv h2 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+}
+
+.scholarshipRow {
+  margin-top: 40px;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.scholarshipCard {
+  background-color: white;
+  padding-block: 25px;
+  padding-inline: 15px;
+  border-radius: 20px;
+  box-shadow: 5px 4px #ffffff38;
+  height: 100%;
+  transition: 0.5s;
+  /* cursor: default; */
+}
+
+.scholarshipCard:hover {
+  box-shadow: 18px 17px #ffffff38;
+
+}
+
+
+@media (max-width:850px) {
+  .scholarshipDiv {
+    margin-inline: 0px;
+    border-radius: 0px;
+    max-width: fit-content;
+    padding-block: 80px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2118,6 +2187,12 @@ body {
   }
   .faqdown {
     display: none;
+  }
+  .navfaq {
+    background-color: #7b6ad8a2;
+  }
+  .navapply {
+    background-color: #0000008a;
   }
 }
 

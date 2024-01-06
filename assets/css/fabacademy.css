@@ -1965,7 +1965,10 @@ footer::before {
   line-height: 0px;
   color: #4a4a4a;
 }
-
+.applyLink {
+  pointer-events: none;
+  opacity: 0.5;
+}
 
 
 .scholarshipList {
@@ -2055,7 +2058,7 @@ footer::before {
   font-weight: 600;
 }
 .fabBannerDiv span:nth-child(3) {
-  font-size: 3vw;
+  font-size: 2.5vw;
   font-weight: 800;
   color: #ff3939;
 }

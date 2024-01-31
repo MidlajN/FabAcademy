@@ -1981,21 +1981,66 @@ footer::before {
 
 /* ------------------------- Scholarship Div ------------------------ */
 .scholarshipDiv {
-  display: flex;
+  /* display: flex; */
   padding: 30px;
   margin-block: 60px;
   background-color: #7a6ad8;
   text-align: center;
-  border-radius: 25px;
-  flex-direction: column;
-  align-items: center;
+  /* border-radius: 25px; */
+  /* flex-direction: row; */
+  /* align-items: center; */
   transition: 0.5s; 
 }
-.scholarshipDiv h2 {
+.scholarshipDiv h1 {
   letter-spacing: 4px;
   text-transform: uppercase;
   font-weight: 600;
   color: white;
+}
+
+.cardFlex {
+  display: flex;
+  align-items: center;
+  min-height: 50vh;
+  gap: 20px;
+}
+
+.cardFlex2 {
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.cardFlex2 p{
+  color: white;
+  font-size: 16px;
+  margin-block: 15px;
+}
+.cardFlex2 a {
+  color: #7a6ad8;
+  padding: 8px 20px;
+  background: white;
+  display: block;
+  width: fit-content;
+  margin: auto;
+  border-radius: 50vh;
+  font-weight: 500;
+  transition: 0.5s ease;
+  
+}
+.cardFlex2 a:hover {
+  box-shadow: rgba(180, 180, 211, 0.25) 0px 6px 12px -2px, rgba(240, 238, 238, 0.3) 0px 3px 7px -3px;
+}
+
+
+
+
+.deadline {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: #ffffff33;
+  padding: 5px 10px;
+  border-radius: 8px;
 }
 
 .scholarshipRow {

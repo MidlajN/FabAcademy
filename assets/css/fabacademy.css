@@ -642,7 +642,7 @@ Header Style
 
   .background-header .main-nav .nav,
   .header-area .main-nav .nav {
-    background-color: #f1f0fe;
+    background-color: #f6f1f3;
   }
 
   .background-header .main-nav .nav li a,
@@ -651,14 +651,14 @@ Header Style
     height: 50px;
     font-weight: 400;
     color: #1e1e1e;
-    background-color: #f1f0fe;
+    background-color: #f6f1f3;
     border-radius: 0px 0px 25px 25px;
   }
 
   .background-header .main-nav .nav li,
   .header-area .main-nav .nav li {
     border-top: 1px solid #ddd;
-    background-color: #f1f0fe;
+    background-color: #f6f1f3;
     height: 50px;
     border-radius: 0px 0px 25px 25px;
   }
@@ -680,7 +680,7 @@ Header Style
   }
 
   .background-header .main-nav .logo {
-    top: 33px;
+    top: 13px;
   }
 
   .background-header .main-nav .border-button {
@@ -774,8 +774,8 @@ Header Style
   align-items: center;
 }
 .videoContainer iframe {
- width: 700px;
-  height: 395px;
+ width: 500px;
+  height: 300px;
   border-radius: 8px;
 }
 .contentContainer {
@@ -784,18 +784,23 @@ Header Style
   padding-left: 40px;
 }
 .contentContainer h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 10px;
 }
 .contentContainer h1 span {
   color: #dc136c;
   -webkit-text-stroke: 0;
 }
+.contentContainer h2 {
+  font-size: 3.5rem !important;
+  margin-bottom: -8px !important;
+}
 .contentContainer p {
   font-size: 1rem;
  margin-bottom: 4rem !important;
   font-weight: 500;
 }
+
 .contentContainer .downloadButton {
   display: inline-block;
   margin-top: 20px;
@@ -820,7 +825,7 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/1frvf4.png);
+  background-image: url(../images/1frvf4.webp);
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1041,7 +1046,7 @@ About Style
   z-index: -1;
   width: 84%;
   height: 100%;
-  background-color: #f1f0fe;
+  background-color: #f6f1f3;
   content: '';
   border-top-left-radius: 500px;
   border-bottom-left-radius: 500px;
@@ -1141,7 +1146,7 @@ Courses Style
 }
 
 .event_filter {
-  background-color: #f1f0fe;
+  background-color: #f6f1f3;
   border-radius: 50px;
   padding: 15px 40px;
   list-style: none;
@@ -1223,7 +1228,7 @@ Courses Style
 }
 
 .events_item {
-  background-color: #f1f0fe;
+  background-color: #f6f1f3;
   border-radius: 25px;
   margin-bottom: 30px;
   position: relative;
@@ -1273,7 +1278,7 @@ Courses Style
   position: relative;
   border-radius: 25px;
   padding: 140px 30px 40px 30px;
-  background-color: #f1f0fe;
+  background-color: #f6f1f3;
   transition: all .3s;
   text-align: center;
   cursor: default;
@@ -1438,7 +1443,7 @@ Team Style
 .team-member .main-content {
   border-radius: 25px;
   padding: 140px 30px 40px 30px;
-  background-color: #f1f0fe;
+  background-color: #f6f1f3;
   text-align: center;
 }
 
@@ -1514,7 +1519,7 @@ Testimonials Style
   z-index: -1;
   width: 65%;
   height: 100%;
-  background-color: #f1f0fe;
+  background-color: #f6f1f3;
   content: '';
   border-top-right-radius: 500px;
   border-bottom-right-radius: 500px;
@@ -1614,7 +1619,7 @@ Events Style
 }
 
 .events .item {
-  background-color: #f1f0fe;
+  background-color: #f6f1f3;
   border-radius: 25px;
   position: relative;
   padding: 40px;
@@ -1725,7 +1730,7 @@ Contact Style
   z-index: -1;
   width: 65%;
   height: 100%;
-  background-color: #f1f0fe;
+  background-color: #f6f1f3;
   content: '';
   border-top-right-radius: 500px;
   border-bottom-right-radius: 500px;
@@ -2356,6 +2361,7 @@ footer::before {
 .contentContainer{
   text-align: right;
   padding: 10px;
+  align-content: center;
 }
 .contentContainer h1{
   font-size: 3rem !important;
@@ -2366,8 +2372,8 @@ footer::before {
   margin-bottom: -8px !important;
 }
 .contentContainer p {
-  font-size: 0.5rem;
- margin-bottom: 0rem !important;
+  font-size: 1rem;
+ margin-bottom: 1rem !important;
   font-weight: 500;
 }
 .outlined-text {
@@ -2627,7 +2633,7 @@ body {
   }
 
   .contact-us .special-offer {
-    background-color: #f1f0fe;
+    background-color: #f6f1f3;
     margin-bottom: 60px;
     padding: 18px 23px 17px 100px;
     width: 100%;
@@ -2697,7 +2703,11 @@ body {
     gap: 20px; 
 
   }
-  
+  .fabacademy{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px !important;
+  }
   .contentContainer {
     text-align: center;
     padding: 0px;
@@ -2706,11 +2716,12 @@ body {
   
   .videoContainer iframe {
     max-width: 100%; 
-    /* height: auto; */
+    height:200px;
+   
   }
   .contentContainer{
-    text-align: right;
-    padding: 6px;
+    text-align: center;
+    padding: 36px;
   }
   .contentContainer h1{
     font-size: 2rem !important;

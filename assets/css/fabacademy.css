@@ -763,7 +763,7 @@ Header Style
   display: flex;
   align-items: center;
   width: 100%;
-  background-color: #4fc3c9;
+  background-color: #4abfbd;
   padding: 36px;
   border-radius: 3px;
 }
@@ -826,10 +826,13 @@ Banner Style
 
 .main-banner {
   background-image: url(../images/1frvf4.webp);
-  background-position: right bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 170px 0px 120px 0px;
+  /* width: auto;
+  height: 100vh; */
+  
   
 }
 
@@ -2294,6 +2297,7 @@ footer::before {
   color: #ff3939;
 }
 
+
 .events {
   margin-top: 80px;
 }
@@ -2716,7 +2720,7 @@ body {
   
   .videoContainer iframe {
     max-width: 100%; 
-    height:200px;
+    height:250px;
    
   }
   .contentContainer{
@@ -2757,9 +2761,11 @@ body {
     color: #ffffff;
     margin-bottom: 10px;
   }
-
+.fabBannerDiv{
+  line-height: 18px;
+}
   .fabBannerDiv span:nth-child(1) {
-    font-size: 6vw;
+    font-size: 4vw;
   }
 
   .fabBannerDiv span:nth-child(2) {
@@ -2767,7 +2773,7 @@ body {
   }
 
   .fabBannerDiv span:nth-child(3) {
-    font-size: 7vw;
+    font-size: 4vw;
   }
 }
 

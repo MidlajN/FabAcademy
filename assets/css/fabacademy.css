@@ -3130,7 +3130,7 @@ body {
 
   .about-us .section-heading {
     margin-left: 0px;
-    margin-top: 120px;
+    /* margin-top: 120px; */
   }
 
   .about-us::before,
@@ -3244,9 +3244,20 @@ body {
   .faqtop {
     display: block;
   }
+  
 
-  .faqdown {
+  /* .faqdown {
     display: none;
+  } */
+  .faqdown {
+    order: 1; /* Bring the FAQ section to the top */
+  }
+
+  .col-lg-6 {
+    order: 2; /* Push the accordion section below */
+  }
+  .section-heading h2{
+    margin-bottom: 65px !important;
   }
 
   .navfaq {
@@ -3256,6 +3267,8 @@ body {
   .navapply {
     background-color: #0000008a;
   }
+
+ 
 }
 
 @media (max-width: 1200px) {
@@ -3364,6 +3377,10 @@ body {
 
   .fabBannerDiv span:nth-child(3) {
     font-size: 4vw;
+  }
+  .section-heading h2 {
+    font-size: 25px;
+    margin-top: 0px;
   }
 }
 

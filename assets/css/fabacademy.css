@@ -2980,7 +2980,7 @@ footer::before {
 
 .footerContact div {
   display: flex;
-  /* align-items: center;  */
+  align-items: center; 
   margin: 5px 0; 
 }
 

@@ -2687,11 +2687,12 @@ footer::before {
   align-items: center;
   gap: 5px;
   font-weight: bold;
-  color: #dc136c;
+  color: red;
   background-color: #F6F1F3;
   border-radius: 30px;
   padding: 5px 10px;
   border: none;
+  margin-top: 12px;
 
 
 }
@@ -2792,6 +2793,24 @@ footer::before {
   .brochure{
     padding: 12px;
   }
+  
+  .footerContact {
+    display: block;
+    width: 100%;
+    text-align: center; 
+    margin-bottom: 10px; 
+  }
+
+  .footerContact {
+    margin-top: 10px; /* Add spacing between location and contact section */
+  }
+  .footerInsta{
+    display: none !important;
+  }
+  .footers{
+    flex-direction: column;
+  }
+
 }
 
 /* -------------------------- Fab Banner Div -------------------------- */
@@ -2954,6 +2973,26 @@ footer::before {
   width: 154px !important;
   height: 34px;
 }
+.footerContact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerContact div {
+  display: flex;
+  /* align-items: center;  */
+  margin: 5px 0; 
+}
+
+.footerText {
+  color: white;
+  margin-left: 5px; 
+}
+
+i {
+  color: white;
+}
+
 
 
 /* 
@@ -3007,6 +3046,7 @@ body {
   .bounceText {
     font-size: 6vw !important;
   }
+  
 }
 
 @media (max-width: 992px) {

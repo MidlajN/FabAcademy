@@ -200,7 +200,7 @@ body {
 .section {
   padding-top: 30px;
   margin-top: 120px;
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
 }
 
 .section-heading {
@@ -803,11 +803,11 @@ Header Style
   margin-bottom: -8px !important;
 }
 
-.contentContainer p {
+/* .contentContainer p {
   font-size: 1rem;
   margin-bottom: 4rem !important;
   font-weight: 500;
-}
+} */
 
 .contentContainer .downloadButton {
   display: inline-block;
@@ -1132,7 +1132,7 @@ h2.accordion-header button {
 }
 
 .accordion-body {
-  padding: 0px 25px 30px 25px;
+  padding: 0px 25px 20px 25px;
   font-size: 14px;
   line-height: 28px;
   color: #4a4a4a;
@@ -1147,6 +1147,13 @@ h2.accordion-header button {
   margin-top: 50px;
 }
 
+.infra-head {
+  padding: 20px 25px 10px 25px;
+  color: #dc136c;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
 
 /* 
 ---------------------------------------------
@@ -1640,7 +1647,14 @@ Testimonials Style
 .scholarship {
   position: relative;
   padding: 80px 0px;
+  /* margin-top: 150px; */
+}
+
+.scholarshipdiv-heading h2 {
+  text-align: center;
   margin-top: 150px;
+  margin-bottom: 30px;
+  color: #543399;
 }
 
 .scholarship:before {
@@ -1673,7 +1687,7 @@ Testimonials Style
   background-color: #4abfbd;
   border-radius: 25px;
   padding: 60px;
-  /* text-align: center; */
+
 }
 
 .scholarship .item p {
@@ -1709,7 +1723,18 @@ Testimonials Style
 .scholarship-reverse {
   position: relative;
   padding: 80px 0px;
-  margin-top: 150px;
+  /* margin-top: 150px; */
+}
+
+.scholarship-para {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #000;
+}
+
+.foundation-scholarship-head {
+  text-transform: uppercase;
+  font-size: 35px;
 }
 
 .scholarship-reverse:before {
@@ -1779,7 +1804,7 @@ Testimonials Style
   font-family: 'Poppins', sans-serif;
 }
 
-/* Button styles for actions */
+
 .scholarship-actions {
   display: flex;
   justify-content: center;
@@ -1799,7 +1824,7 @@ Testimonials Style
   transition: background-color 0.3s ease;
 }
 
-/* Container for buttons */
+
 .action-container {
   display: flex;
   flex-direction: column;
@@ -1807,74 +1832,24 @@ Testimonials Style
   margin-top: 20px;
 }
 
-/* Top row of buttons */
-.action-buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.apply-button {
-  display: inline-block;
-  padding: 15px 30px;
-  border: 2px solid #4fbdab;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 700;
-  color: black;
-  transition: all 0.3s ease;
-  text-align: center;
-}
-
-.apply-button:hover {
-  background-color: #4fbdab;
-  color: white;
-}
-
-
-
-.single-action {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.single-action p {
-  font-size: 18px;
-  font-weight: 600;
-  color: #000;
-}
-
-.single-action a {
-  font-weight: 700;
-  color: #DC136C;
-  text-decoration: underline;
-  font-size: 18px;
-}
-
-
-.overview {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 30px;
-
-}
-
-.scholarship-heading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-
-.scholarship-heading h6 {
+.applynow-buttn {
   color: #dc136c;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 600;
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
 }
+
+.applynow-buttn img.button-icon {
+  margin-left: 8px;
+  width: 10px;
+  height: 10px;
+}
+
 
 .section-heading img {
   width: 350px;
@@ -1882,35 +1857,129 @@ Testimonials Style
 }
 
 
-.overviewcontent {
+.overview {
+  display: flex;
+  align-items: center;
+  align-items: flex-start;
+  position: relative;
+  padding: 100px;
+  overflow: hidden;
+  margin-top: 0px;
+}
+
+.overview:before {
+  position: absolute;
+  top: -268px;
+  bottom: 0;
+  left: -100px;
+  z-index: -1;
+  width: 20%;
+  height: 100%;
+  background-color: #f6f1f3;
+  content: '';
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+}
+
+.overview::after {
+  position: absolute;
+  top: 268px;
+  bottom: 0;
+  right: -100px;
+  z-index: -1;
+  width: 20%;
+  height: 100%;
+  background-color: #f6f1f3;
+  content: '';
+  border-top-left-radius: 500px;
+  border-bottom-left-radius: 500px;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  /* gap: 85px; */
+
+}
+
+.col-lg-3 {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-top: -75px;
-  font-size: larger;
+  justify-content: flex-start;
+  padding-top: 10px;
 }
 
-.brochure {
-  margin-top: 10px;
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.overview-heading {
+  color: white;
+  background-color: #543399;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  border-radius: 20px;
+  width: 50%;
+
+}
+
+
+.profile-image {
+  max-width: 100%;
+  width: 335px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+
+.overviewcontent {
+  flex: 2;
+  padding: 20px;
+}
+
+.overviewcontent-heading {
+  font-size: 20px;
+  font-weight: bold;
   margin-bottom: 10px;
+  color: #dc136c;
+  
 }
 
-.separator {
-  width: 100%;
-  height: 1px;
-  background-color: #4abfbd;
-  margin-top: 10px;
+.overviewcontent h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.session-details {
+  margin-bottom: 15px;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 10px;
+  background-color: #F6F1F3;
+  border-radius: 10px;
+}
+
+.session-detailsneil {
+  font-size: 12px;
+  line-height: 18px;
+  width: 300px;
+  margin-top: 15px;
 }
 
 .images-container {
   display: flex;
   gap: 20px;
   align-items: center;
-  margin-top: -34px;
+  /* margin-top: -34px; */
+  width: 274px;
 }
 
 .cba_logo {
-  width: 191px;
+  width: 154px;
   height: auto;
 }
 
@@ -1919,7 +1988,15 @@ Testimonials Style
   height: 27px;
 }
 
-.why-kochi:before {
+
+
+.apply-us {
+  position: relative;
+  padding: 80px 0px;
+  margin-top: 0px;
+}
+
+.apply-us:before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1929,61 +2006,24 @@ Testimonials Style
   height: 100%;
   background-color: #f6f1f3;
   content: '';
-  border-top-right-radius: 500px;
-  border-bottom-right-radius: 500px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 960px;
 }
 
-.why-kochi {
-  position: relative;
-  padding: 80px 0;
-  margin-top: 150px;
-}
-
-.why-kochi .section-heading {
-  margin-bottom: 20px;
-  margin-left: 30px;
-  color: #333;
-}
-
-.why-kochi .section-heading h6 {
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #dc136c;
-}
-
-.why-kochi .section-heading h2 {
-  font-size: 36px;
-  font-weight: 700;
+.apply-us p {
   color: #000;
+  font-size: 23px;
+  font-family: 'Poppins', sans-serif;
+  ;
 }
 
-.why-kochi .why-kochi-content {
-  background-color: #4abfbd;
-  border-radius: 25px;
-  padding: 40px;
-  color: white;
-  font-size: 18px;
-  line-height: 1.8;
-  font-weight: 300;
+.apply-us-content {
+  margin-top: 10px;
 }
 
-.why-kochi .why-kochi-content p {
-  color: #fff;
-  margin-bottom: 40px;
-  font-size: 18px;
-}
-
-.why-kochi .why-kochi-content h4 {
-  font-size: 22px;
-  font-weight: 600;
+.fees {
   margin-top: 20px;
-}
 
-.why-kochi .why-kochi-content span {
-  font-size: 14px;
-  color: #eaf8f8;
-  display: block;
-  margin-top: 5px;
 }
 
 /* 
@@ -2625,6 +2665,42 @@ footer::before {
 
 }
 
+.ama-section {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.ama-section p {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  line-height: 44px;
+  font-size: 24px;
+  margin-top: 20px;
+  color: #000;
+  font-weight: 600;
+
+}
+
+.register-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  color: #dc136c;
+  background-color: #F6F1F3;
+  border-radius: 30px;
+  padding: 5px 10px;
+  border: none;
+
+
+}
+
+.register-link img {
+  width: 16px;
+  height: 16px;
+}
+
 
 @media (max-width:850px) {
   .scholarshipDiv {
@@ -2652,12 +2728,71 @@ footer::before {
   .scholarship-reverse .col-lg-7 {
     order: 2;
   }
-  .action-buttons{
+
+  .action-buttons {
     flex-direction: column;
   }
+
+  .images-container {
+    margin-top: -15px;
+    gap: -16px;
+  }
+
+  .overviewcontent {
+    padding: 0px;
+  }
+
+  .overviewcontent-heading {
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 0px !important;
+  }
+
+  .overviewcontent h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .session-detailsneil {
+    margin-top: 35px;
+  }
+
+  .overview {
+    padding: 0px;
+  }
+
+  .scholarship-reverse .col-lg-5 {
+    text-align: left;
+  }
+
+  #scholarship .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #scholarship .col-lg-5 {
+
+    justify-content: flex-start !important;
+  }
+  .apply-us:before {
+   display: none;
+  }
+  .total-fees{
+    font-size: 18px !important;
+  }
+  .options{
+    font-size: 12px !important;
+    margin-top: 0px !important;
+  }
+  .session-details {
+    padding: 17px;
+  }
+  .brochure{
+    padding: 12px;
+  }
 }
-
-
 
 /* -------------------------- Fab Banner Div -------------------------- */
 .fabBannerMain {
@@ -2670,6 +2805,7 @@ footer::before {
   margin: auto;
   width: fit-content;
   padding-inline: 30px;
+  margin-top: -40px;
 }
 
 .fabBannerDiv span {
@@ -2768,20 +2904,15 @@ footer::before {
 }
 
 .contentContainer h1 {
-  font-size: 3rem !important;
+  font-size: 2.5rem !important;
   margin-bottom: -10px !important;
 }
 
 .contentContainer h2 {
-  font-size: 3.5rem !important;
+  font-size: 3rem !important;
   margin-bottom: -8px !important;
 }
 
-.contentContainer p {
-  font-size: 1rem;
-  margin-bottom: 1rem !important;
-  font-weight: 500;
-}
 
 .outlined-text {
   font-family: 'Poppins', sans-serif;
@@ -2805,12 +2936,12 @@ footer::before {
 }
 
 .subtitle-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 1px;
-  color: #ffffff;
-  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif ;
+  font-size: 12px;
+  margin-top: 25px;
+  letter-spacing: 1px ;
+  color: #ffffff ;
+  font-weight: normal;
 }
 
 .download-button {

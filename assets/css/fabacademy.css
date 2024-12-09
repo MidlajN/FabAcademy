@@ -1511,6 +1511,85 @@ Team Style
   margin-top: 200px;
 }
 
+/* Social Icons Container */
+.team-member .main-content ul.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  justify-content: center; 
+  gap: 10px; 
+}
+
+/* Social Icons Links */
+.team-member .main-content ul.social-icons li a {
+  background-color: #fff; 
+  color: #6a529d; 
+  display: inline-flex;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  width: 40px;
+  height: 40px; 
+  border-radius: 50%;
+  font-size: 18px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease-in-out; 
+}
+
+/* Hover Effect */
+.team-member .main-content ul.social-icons li a:hover {
+  background-color: #543399; 
+  color: #fff; /* Icon color on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.1); 
+}
+
+/* Ensure Icon Inherits Colors */
+.team-member .main-content ul.social-icons li a i {
+  color: inherit; 
+  /* transition: color 0.3s ease-in-out;  */
+}
+/* Social Icons Container */
+.alumni .social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  justify-content: center; 
+  gap: 10px;
+}
+
+/* Social Icons Links */
+.alumni .social-icons li a {
+  background-color: #fff; 
+  color: #6a529d;
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%; 
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out; 
+}
+
+/* Hover Effect */
+.alumni .social-icons li a:hover {
+  background-color: #543399; 
+  color: #fff; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.1);
+}
+
+/* Ensure Icon Inherits Colors */
+.alumni .social-icons li a i {
+  color: inherit; 
+  /* transition: color 0.3s ease-in-out; */
+}
+
 
 /* 
 ---------------------------------------------
@@ -2802,7 +2881,7 @@ footer::before {
   }
 
   .footerContact {
-    margin-top: 10px; /* Add spacing between location and contact section */
+    margin-top: 10px; 
   }
   .footerInsta{
     display: none !important;
@@ -3240,23 +3319,22 @@ body {
   footer {
     margin-top: 30px;
   }
+.faqdown {
+    display: none;
+  }
 
   .faqtop {
     display: block;
   }
-  
-
-  /* .faqdown {
-    display: none;
-  } */
-  .faqdown {
-    order: 1; /* Bring the FAQ section to the top */
+    
+  .aboutkochi {
+    order: 1; 
   }
 
   .col-lg-6 {
-    order: 2; /* Push the accordion section below */
+    order: 2; 
   }
-  .section-heading h2{
+  .section-heading{
     margin-bottom: 65px !important;
   }
 

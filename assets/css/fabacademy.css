@@ -2825,9 +2825,9 @@ footer::before {
     gap: -16px;
     margin-bottom: 36px;
   }
-  .applynow-buttn{
+  /* .applynow-buttn{
     background-color: #f6f1f3;
-  }
+  } */
 
   .overviewcontent {
     padding: 0px;
@@ -2869,7 +2869,6 @@ footer::before {
   }
 
   #scholarship .col-lg-5 {
-
     justify-content: flex-start !important;
   }
   .apply-us:before {
@@ -3367,7 +3366,10 @@ body {
   }
   .scholarship-reverse:before ,.scholarship:before {
     width: 100%;
-    
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
  
 }

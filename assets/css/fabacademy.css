@@ -1924,12 +1924,11 @@ Testimonials Style
   cursor: pointer;
 }
 
-.applynow-buttn img.button-icon {
-  margin-left: 8px;
-  width: 10px;
-  height: 10px;
+@media (max-width: 900px) {
+  .applynow-buttn.main {
+    border: 1px solid #dc136d9c;
+  }
 }
-
 
 .section-heading img {
   width: 350px;
@@ -2770,21 +2769,16 @@ footer::before {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-weight: bold;
+  font-weight: 600;
   color: red;
   background-color: #F6F1F3;
   border-radius: 30px;
-  padding: 5px 10px;
+  padding: 5px 25px;
   border: none;
   margin-top: 12px;
-
-
+  letter-spacing: 1px;
 }
 
-.register-link img {
-  width: 16px;
-  height: 16px;
-}
 .brochure{
   margin-top: 15px;
 }
@@ -2870,6 +2864,7 @@ footer::before {
 
   #scholarship .col-lg-5 {
     justify-content: flex-start !important;
+    margin-bottom: 20px;
   }
   .apply-us:before {
    display: none;

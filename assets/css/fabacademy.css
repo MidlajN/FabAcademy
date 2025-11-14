@@ -676,7 +676,12 @@ Header Style
   .header-area .main-nav .logo {
     position: absolute;
     left: 30px;
-    top: 0px;
+    /* top: 0px; */
+    top: 65px;
+  }
+
+  .apply-us {
+    padding-bottom: 10px !important;
   }
 
   .background-header .main-nav .logo {
@@ -762,6 +767,7 @@ Header Style
 
 .fabAcademyContainer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   background-color: #4abfbd;
@@ -772,7 +778,7 @@ Header Style
 .videoContainer {
   flex: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -786,6 +792,7 @@ Header Style
   flex: 1;
   color: white;
   padding-left: 40px;
+  text-align: center;
 }
 
 .contentContainer h1 {
@@ -2845,6 +2852,17 @@ footer::before {
     font-size: 16px;
     line-height: 26px;
   }
+
+  .image-wrapper .profile-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .overview-detail {
+    text-align: center;
+    margin: auto;
+  } 
+
   .neil-details{
     font-size: 18px !important;
   }
@@ -2917,6 +2935,7 @@ footer::before {
   margin: auto;
   width: fit-content;
   padding-inline: 30px;
+  padding-block: 10px;
   margin-top: -40px;
 }
 
@@ -3010,9 +3029,10 @@ footer::before {
 }
 
 .contentContainer {
-  text-align: right;
-  padding: 10px;
+  text-align: center;
+  padding: 10px 10px 30px 10px;
   align-content: center;
+
 }
 
 .contentContainer h1 {
@@ -3366,7 +3386,12 @@ body {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
   }
- 
+
+  .videoContainer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -3393,14 +3418,14 @@ body {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    padding: 0px;
+    padding: 10px;
     gap: 20px;
 
   }
 
   .fabacademy {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 0px !important;
   }
 
